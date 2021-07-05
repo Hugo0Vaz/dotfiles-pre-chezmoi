@@ -42,3 +42,8 @@ alias ss="source ~/.zshrc"
 
 # alias para o repositório bare de dotfiles.
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias ds="dotfiles status"
+alias da="dotfiles add -u"
+alias dc="dotfiles commit -m "auto-commit""
+alias dp="dotfiles push origin master"
+alias dotall="da && dc && dp"
