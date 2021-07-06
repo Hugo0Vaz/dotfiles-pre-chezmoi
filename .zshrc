@@ -1,6 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export ZSH="/home/admin/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 autoload -Uz compinit && compinit
 
