@@ -34,6 +34,7 @@ alias lal="ls -al"
 # sincroniza o taskwarrior e abre o tt.
 # quando executado causa a janela do tt à demorar a abrir.
 alias tt="task sync && taskwarrior-tui"
+alias ts="task sync"
 
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
