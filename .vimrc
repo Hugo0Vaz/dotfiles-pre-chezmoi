@@ -41,8 +41,12 @@ set background=dark
 
 let mapleader="\<Space>"
 
-"remaps ========================================================================
+" remaps =======================================================================
 command! -nargs=0 Format :call CocAction('format')
+
+" remaps de cópia e cola
+inoremap <C-v> <ESC>"+pa
+vnoremap <C-c> "+y
 
 " coc diagnostic remaps
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
