@@ -179,7 +179,7 @@ window:
 # Colors (Gruvbox Material Dark Medium)
 colors:
   primary:
-    background: '0x28282a'
+    background: '0x262626'
     foreground: '0xdfbf8f'
   normal:
     black:   '0x665c54'
