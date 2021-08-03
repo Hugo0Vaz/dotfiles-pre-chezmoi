@@ -1,3 +1,7 @@
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -40,6 +44,7 @@ alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
 
 alias ss="source ~/.zshrc"
+alias sv="source ~/.vimrc"
 
 # alias para o repositório bare de dotfiles.
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
@@ -48,3 +53,6 @@ alias da="dotfiles add -u"
 alias dc="dotfiles commit -m "auto-commit""
 alias dp="dotfiles push origin master"
 alias dotall="da && dc && dp"
+
+# para garantir o teclado br
+$(setxkbmap br)
