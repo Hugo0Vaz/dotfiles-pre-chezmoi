@@ -47,6 +47,7 @@ alias ts="task sync"
 
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
+alias viebrc="vim ~/.config/Vieb/viebrc"
 
 alias ss="source ~/.zshrc"
 alias sv="source ~/.vimrc"
