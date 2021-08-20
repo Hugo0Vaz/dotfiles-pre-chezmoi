@@ -42,8 +42,6 @@ alias la="ls -a"
 alias ll="ls -l"
 alias lal="ls -al"
 
-# sincroniza o taskwarrior e abre o tt.
-# quando executado causa a janela do tt à demorar a abrir.
 alias tt="taskwarrior-tui"
 alias ts="task sync"
 
