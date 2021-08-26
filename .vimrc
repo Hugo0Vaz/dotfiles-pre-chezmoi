@@ -28,12 +28,15 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+        
     Plug 'morhetz/gruvbox'
     Plug 'neoclide/coc.nvim'
     Plug 'scrooloose/nerdtree'
+    Plug 'mhinz/vim-startify'
     Plug 'vim-latex/vim-latex'
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree'
+
 call plug#end()
 
 colorscheme gruvbox
