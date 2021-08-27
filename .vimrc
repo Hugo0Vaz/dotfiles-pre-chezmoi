@@ -36,6 +36,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-latex/vim-latex'
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree'
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
