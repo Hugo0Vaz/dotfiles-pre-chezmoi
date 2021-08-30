@@ -7,7 +7,7 @@ if command -v tmux \
   exec tmux
 fi
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/Projetos/obsidian_scripts:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 
