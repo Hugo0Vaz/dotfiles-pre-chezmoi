@@ -44,10 +44,12 @@ alias lal="ls -al"
 
 alias tt="taskwarrior-tui"
 alias ts="task sync"
+alias ta="task sync && taskwarrior-tui"
 
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
 alias viebrc="vim ~/.config/Vieb/viebrc"
+alias tmuxrc="vim ~/.tmuxrc"
 
 alias ss="source ~/.zshrc"
 alias sv="source ~/.vimrc"
