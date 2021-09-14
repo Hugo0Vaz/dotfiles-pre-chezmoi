@@ -52,7 +52,6 @@ alias viebrc="vim ~/.config/Vieb/viebrc"
 alias tmuxrc="vim ~/.tmuxrc"
 
 alias ss="source ~/.zshrc"
-alias sv="source ~/.vimrc"
 
 # alias para o repositório bare de dotfiles.
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
