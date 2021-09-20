@@ -1,3 +1,9 @@
+#       _______| |__  _ __ ___ 
+#      |_  / __| '_ \| '__/ __|
+#     _ / /\__ \ | | | | | (__ 
+#    (_)___|___/_| |_|_|  \___|
+#                             
+
 if command -v tmux \
     &> /dev/null \
     && [ -n "$PS1" ] \
@@ -55,12 +61,12 @@ alias ss="source ~/.zshrc"
 
 # alias para o repositório bare de dotfiles.
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+
 alias ds="dotfiles status"
 alias da="dotfiles add -u"
 alias dc="dotfiles commit -m "auto-commit""
-alias dp="dotfiles push origin master"
-alias dotpush="da && dc && dp"
-alias dotpull="dotfiles pull origin master"
 
-# para garantir o teclado br
-$(setxkbmap br)
+alias dotpush="dotfiles add -u && \
+               dotfiles commit -m "auto-commit" && \ 
+               dotfiles push origin master" 
+alias dotpull="dotfiles pull origin master"
