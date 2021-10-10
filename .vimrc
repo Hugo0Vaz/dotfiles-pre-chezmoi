@@ -30,7 +30,6 @@ endif
 call plug#begin('~/.vim/plugged')
         
     Plug 'morhetz/gruvbox'
-    Plug 'neoclide/coc.nvim'
     Plug 'scrooloose/nerdtree'
     Plug 'mhinz/vim-startify'
     Plug 'vim-latex/vim-latex'

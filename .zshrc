@@ -38,19 +38,28 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 alias kb="setxkbmap br"
+
+# aliases for editors
+alias nv="nvim"
+alias vi="vim"
+
+# aliases for ls
 alias la="ls -a"
 alias ll="ls -l"
 alias lal="ls -al"
 
+# aliases for taskwarrior
 alias tt="taskwarrior-tui"
 alias ts="task sync"
 alias ta="task sync && taskwarrior-tui"
 
-alias vimrc="vim ~/.vimrc"
-alias zshrc="vim ~/.zshrc"
-alias viebrc="vim ~/.config/Vieb/viebrc"
-alias tmuxrc="vim ~/.tmuxrc"
+# aliases for configuration files
+alias vimrc="$EDITOR ~/.vimrc"
+alias zshrc="$EDITOR ~/.zshrc"
+alias viebrc="$EDITOR ~/.config/Vieb/viebrc"
+alias tmuxrc="$EDITOR ~/.tmuxrc"
 
+# alias for sourcing configuration files
 alias ss="source ~/.zshrc"
 
 # alias para o repositório bare de dotfiles.
@@ -63,4 +72,4 @@ alias dotpush="da && dc && dp"
 alias dotpull="dotfiles pull origin master"
 
 # para garantir o teclado br
-$(setxkbmap br)
+exec $(setxkbmap br)
