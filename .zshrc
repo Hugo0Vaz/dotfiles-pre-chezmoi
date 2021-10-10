@@ -67,6 +67,10 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias ds="dotfiles status"
 alias da="dotfiles add -u"
 alias dc="dotfiles commit -m "auto-commit""
+alias dotpush="dotfiles add -u && \
+               dotfiles commit -m "auto-commit" && \ 
+               dotfiles push origin master" 
+alias dotpull="dotfiles pull origin master"
 
 # para garantir o teclado br
 exec $(setxkbmap br)
