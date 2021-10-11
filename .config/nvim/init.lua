@@ -11,9 +11,22 @@
 -- e-mail: hugomartinsvaz@gmail.com
 -- github: Hugo0Vaz
 
-require "options"     -- global configs
-require "plugins"     -- packer and plugin config
+-- global configs
+require "options"
+
+-- packer config
+require "plugins"
 
 -- gruvbox config
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
+
+-- lualine config
+local config = require "lualine_options"
+require('lualine').setup(config)
+
+-- pyright LSP config
+require'lspconfig'.pyright.setup{}
+
+-- bashls LSP config
+require'lspconfig'.bashls.setup{}

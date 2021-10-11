@@ -7,7 +7,7 @@ if command -v tmux \
   exec tmux
 fi
 
-export PATH=$HOME/bin:/usr/local/bin:$HOME/Projetos/obsidian_scripts:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/Projetos/obsidian_scripts:$HOME/.scripts:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -56,7 +56,9 @@ alias vimrc="$EDITOR ~/.vimrc"
 alias nvimrc="$EDITOR ~/.config/nvim/init.lua"
 alias zshrc="$EDITOR ~/.zshrc"
 alias viebrc="$EDITOR ~/.config/Vieb/viebrc"
-alias tmuxrc="$EDITOR ~/.tmuxrc"
+alias tmuxrc="$EDITOR ~/.tmux.conf"
+
+alias de="tmux display-popup '~/.scripts/dotedit.sh'"
 
 # alias for sourcing configuration files
 alias ss="source ~/.zshrc"
