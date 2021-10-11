@@ -37,8 +37,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-alias kb="setxkbmap br"
-
 # aliases for editors
 alias nv="nvim"
 alias vi="vim"
@@ -55,6 +53,7 @@ alias ta="task sync && taskwarrior-tui"
 
 # aliases for configuration files
 alias vimrc="$EDITOR ~/.vimrc"
+alias nvimrc="$EDITOR ~/.config/nvim/init.lua"
 alias zshrc="$EDITOR ~/.zshrc"
 alias viebrc="$EDITOR ~/.config/Vieb/viebrc"
 alias tmuxrc="$EDITOR ~/.tmuxrc"

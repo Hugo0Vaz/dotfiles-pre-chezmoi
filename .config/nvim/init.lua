@@ -11,7 +11,9 @@
 -- e-mail: hugomartinsvaz@gmail.com
 -- github: Hugo0Vaz
 
-require(config/alises.lua)      -- aliases
-require(config/global_config)   -- global configs
+require "options"     -- global configs
+require "plugins"     -- packer and plugin config
 
-let g.mapleader = " "        -- <Leader> config
+-- gruvbox config
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])
