@@ -28,6 +28,7 @@ vim.o.undofile = true
 vim.o.title = true
 vim.o.hidden = true
 vim.o.rnu = true
+vim.o.wrap = false
 
 -- global options for let
 vim.g.mapleader = ' '

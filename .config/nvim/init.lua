@@ -28,3 +28,6 @@ require "bashls-config-ls"
 
 -- nvim-cmp config
 require "cmp-config"
+
+-- maps and remaps
+require "remaps"
