@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
     -- plugin manager
     use 'wbthomason/packer.nvim'
 
+    -- theme
     use 'gruvbox-community/gruvbox'
     
     -- icons for vim
