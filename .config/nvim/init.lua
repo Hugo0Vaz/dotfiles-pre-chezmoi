@@ -17,16 +17,14 @@ require "options"
 -- packer config
 require "plugins"
 
--- gruvbox config
-vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
-
 -- lualine config
-local config = require "lualine_options"
-require('lualine').setup(config)
+require "lualine-config"
 
 -- pyright LSP config
-require'lspconfig'.pyright.setup{}
+require "pyright-config-ls"
 
 -- bashls LSP config
-require'lspconfig'.bashls.setup{}
+require "bashls-config-ls"
+
+-- nvim-cmp config
+require "cmp-config"

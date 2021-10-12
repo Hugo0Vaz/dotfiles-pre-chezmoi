@@ -26,4 +26,4 @@ config = {
   extensions = {}
 }
 
-return config
+require('lualine').setup(config)

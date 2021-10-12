@@ -1,5 +1,5 @@
 -- global options
-vim.o.completeopt = "menuone,noselect"
+vim.o.completeopt = 'menuone,noselect,noselect'
 vim.o.inccommand = 'nosplit'
 vim.o.swapfile = true
 vim.o.dir = '/tmp'
@@ -30,4 +30,8 @@ vim.o.hidden = true
 vim.o.rnu = true
 
 -- global options for let
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
+
+-- gruvbox config
+vim.o.background = 'dark'
+vim.cmd([[colorscheme gruvbox]])
