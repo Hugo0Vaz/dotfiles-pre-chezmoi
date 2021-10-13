@@ -11,7 +11,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/Projetos/obsidian_scripts:$HOME/.scri
 
 export ZSH="$HOME/.oh-my-zsh"
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 autoload -Uz compinit && compinit
 
@@ -58,10 +58,9 @@ alias zshrc="$EDITOR ~/.zshrc"
 alias viebrc="$EDITOR ~/.config/Vieb/viebrc"
 alias tmuxrc="$EDITOR ~/.tmux.conf"
 
-alias de="tmux display-popup '~/.scripts/dotedit.sh'"
-
 # alias for sourcing configuration files
 alias ss="source ~/.zshrc"
+alias st="tmux source-file ~/.tmux.conf"
 
 # alias para o repositório bare de dotfiles.
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"

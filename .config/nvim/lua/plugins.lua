@@ -41,6 +41,15 @@ return require('packer').startup(function(use)
     -- nerdtree
     use 'preservim/nerdtree'
 
+    -- autopairs
+    use 'windwp/nvim-autopairs'
+
+    -- telescope
+    use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
+
+    -- barbar
+    use {'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}}
+
     -- automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then
         require('packer').sync()
