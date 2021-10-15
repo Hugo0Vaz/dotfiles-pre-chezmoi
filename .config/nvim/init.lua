@@ -11,11 +11,11 @@
 -- e-mail: hugomartinsvaz@gmail.com
 -- github: Hugo0Vaz
 
--- global configs
-require "options"
-
 -- packer config
 require "plugins"
+
+-- global configs
+require "options"
 
 -- maps and remaps
 require "remaps"

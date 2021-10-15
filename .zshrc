@@ -38,8 +38,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # aliases for editors
-alias nv="nvim"
-alias vi="vim"
+alias vim="$EDITOR"
+alias nv="$EDITOR"
+alias vi="$EDITOR"
 
 # aliases for ls
 alias la="ls -a"
