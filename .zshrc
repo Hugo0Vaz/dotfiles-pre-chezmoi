@@ -52,7 +52,6 @@ alias tt="taskwarrior-tui"
 alias ts="task sync"
 alias ta="task sync && taskwarrior-tui"
 
-# aliases for configuration files
 alias vimrc="$EDITOR ~/.vimrc"
 alias nvimrc="$EDITOR ~/.config/nvim/init.lua"
 alias zshrc="$EDITOR ~/.zshrc"
