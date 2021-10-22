@@ -37,6 +37,9 @@ return require('packer').startup(function(use)
 
     -- autocomplete additional source
     use 'hrsh7th/cmp-nvim-lsp'
+
+    -- snippets engine
+    use 'L3MON4D3/LuaSnip'
     
     -- nerdtree
     use 'preservim/nerdtree'
