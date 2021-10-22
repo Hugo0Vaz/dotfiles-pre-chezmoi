@@ -102,3 +102,15 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+set_proxy (){
+    source ~/.scripts/proxy-utils/set_proxy.sh
+}
+
+unset_proxy (){
+    source ~/.scripts/proxy-utils/unset_proxy.sh
+}
+
+list_proxy (){
+    source ~/.scripts/proxy-utils/list_proxy.sh
+}
