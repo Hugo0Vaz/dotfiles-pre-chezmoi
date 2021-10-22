@@ -52,6 +52,11 @@ alias tt="taskwarrior-tui"
 alias ts="task sync"
 alias ta="task sync && taskwarrior-tui"
 alias tl="task list"
+alias tw="task list +work"
+alias tp="task list +puc"
+
+# alias for clearing the screen
+alias cls="clear"
 
 # aliases for configuration files
 alias vimrc="$EDITOR ~/.vimrc"
