@@ -13,6 +13,7 @@ map('v', '<C-c>',            '"+y')
 map('n', '<leader>n',        ':NERDTreeFocus<CR>')
 map('n', '<C-n>',            ':NERDTreeToggle<CR>')
 map('n', '<C-f>',            ':NERDTreeFind<CR>')
+map('n', 'bn',               ':bn<CR>')
 
 -- clear previous searches, highlights and matches
 map('n', '<C-l>',            ':nohl<CR><C-L>')

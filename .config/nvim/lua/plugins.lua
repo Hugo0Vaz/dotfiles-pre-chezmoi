@@ -37,6 +37,9 @@ return require('packer').startup(function(use)
 
     -- autocomplete additional source
     use 'hrsh7th/cmp-nvim-lsp'
+
+    -- snippets engine
+    use 'L3MON4D3/LuaSnip'
     
     -- nerdtree
     use 'preservim/nerdtree'
@@ -49,6 +52,9 @@ return require('packer').startup(function(use)
 
     -- barbar
     use {'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}}
+
+    -- fugitive.vim
+    use {'tpope/vim-fugitive'}
 
     -- automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then

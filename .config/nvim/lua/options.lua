@@ -33,6 +33,9 @@ vim.o.wrap = false
 -- global options for let
 vim.g.mapleader = ' '
 
+-- grey column highlight
+vim.o.colorcolumn = '80'
+
 -- gruvbox config
 vim.o.background = 'dark'
 vim.cmd([[colorscheme gruvbox]])

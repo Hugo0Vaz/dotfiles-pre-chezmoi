@@ -52,6 +52,11 @@ alias tt="taskwarrior-tui"
 alias ts="task sync"
 alias ta="task sync && taskwarrior-tui"
 alias tl="task list"
+alias tw="task list +work"
+alias tp="task list +puc"
+
+# alias for clearing the screen
+alias cls="clear"
 
 alias vimrc="$EDITOR ~/.vimrc"
 alias nvimrc="$EDITOR ~/.config/nvim/init.lua"
@@ -95,4 +100,16 @@ ex ()
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+set_proxy (){
+    source ~/.scripts/proxy-utils/set_proxy.sh
+}
+
+unset_proxy (){
+    source ~/.scripts/proxy-utils/unset_proxy.sh
+}
+
+list_proxy (){
+    source ~/.scripts/proxy-utils/list_proxy.sh
 }
