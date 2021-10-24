@@ -4,7 +4,7 @@ local luasnip = require('luasnip')
 config = {
     snippet = {
     expand = function(args)
-        luasnip.lsp_expand(args.body) -- For `luasnip` users.
+       luasnip.lsp_expand(args.body) -- For `luasnip` users.
       end,
     },
     mapping = {
@@ -17,7 +17,9 @@ config = {
     sources = {
         { name = 'nvim_lsp' },
         { name = 'buffer' },
-        { name = 'luasnip'}
+        { name = 'luasnip'},
+        { name = 'path' },
+        { name = 'nvim_lua' }
     }
 }
 

@@ -44,4 +44,4 @@ map('n', '<leader>fb',       '<cmd>Telescope buffers<CR>')
 map('n', '<leader>fh',       '<cmd>Telescope help_tags<CR>')
 
 -- terminal remap
--- map('t', '<Esc>',            '<C-\><C-n>')
+local tremap = vim.api.nvim_exec([[tnoremap <Esc> <C-\><C-n>]],true)

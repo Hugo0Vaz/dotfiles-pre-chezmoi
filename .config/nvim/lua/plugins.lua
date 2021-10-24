@@ -35,8 +35,11 @@ return require('packer').startup(function(use)
     -- autocomplete
     use 'hrsh7th/nvim-cmp'
 
-    -- autocomplete additional source
+    -- autocomplete additional sources
     use 'hrsh7th/cmp-nvim-lsp'
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-nvim-lua"
 
     -- snippets engine
     use 'L3MON4D3/LuaSnip'
