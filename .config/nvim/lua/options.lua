@@ -1,3 +1,11 @@
+-- aliases
+-- vim.o   -- global
+-- vim.g   -- global for let options
+-- vim.wo  -- window local
+-- vim.bo  -- buffer local
+-- vim.fn  -- access vim functions
+-- vim.cmd -- vim commands
+
 -- global options
 vim.o.completeopt = 'menuone,noselect,noselect'
 vim.o.inccommand = 'nosplit'
@@ -39,3 +47,8 @@ vim.o.colorcolumn = '80'
 -- gruvbox config
 vim.o.background = 'dark'
 vim.cmd([[colorscheme gruvbox]])
+
+-- newline char
+-- vim.cmd([[set list listchars=trail:-,eol:¶]])
+vim.cmd([[set list listchars=trail:-,eol:⏎]])
+
