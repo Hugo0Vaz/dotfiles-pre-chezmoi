@@ -11,7 +11,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/Projetos/obsidian_scripts:$HOME/.scri
 
 export ZSH="$HOME/.oh-my-zsh"
 
-export EDITOR='nvim'
+
 
 autoload -Uz compinit && compinit
 
@@ -37,15 +37,28 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# aliases for editors
+if command -v /usr/bin/exa &> /dev/null
+then
+    alias ls="exa --icons"
+    alias la="exa -a --icons"
+    alias ll="exa -l --icons"
+    alias lal="exa -la --icons"
+else
+    alias la="ls -a"
+    alias ll="ls -l"
+    alias lal="ls -al"
+fi
+
+if command -v /usr/bin/nvim &> /dev/null
+then
+    export EDITOR='nvim'
+fi
+
+alias vi="$EDITOR"
 alias vim="$EDITOR"
 alias nv="$EDITOR"
-alias vi="$EDITOR"
-
-# aliases for ls
-alias la="ls -a"
-alias ll="ls -l"
-alias lal="ls -al"
+alias nvim="$EDITOR"
+alias e="$EDITOR"
 
 # aliases for taskwarrior
 alias tt="taskwarrior-tui"
