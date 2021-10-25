@@ -11,8 +11,6 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/Projetos/obsidian_scripts:$HOME/.scri
 
 export ZSH="$HOME/.oh-my-zsh"
 
-
-
 autoload -Uz compinit && compinit
 
 ZSH_THEME="spaceship"
@@ -91,6 +89,8 @@ alias dotpull="dotfiles pull origin master"
 
 # para garantir o teclado br
 exec $(setxkbmap br)
+
+source ~/.scripts/goto.sh
 
 # função para lidar com arquivos comprimidos
 ex ()
