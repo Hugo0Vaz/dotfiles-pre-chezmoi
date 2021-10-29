@@ -79,7 +79,7 @@ alias tmuxrc="$EDITOR ~/.tmux.conf"
 alias ss="source ~/.zshrc"
 alias st="tmux source-file ~/.tmux.conf"
 
-# alias para o repositório bare de dotfiles.
+# alias for git bare repo of dotfiles.
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias ds="dotfiles status"
 alias da="dotfiles add -u"
