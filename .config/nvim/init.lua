@@ -23,8 +23,11 @@ require "remaps"
 -- pyright LSP config
 require "config-ls/pyright-config-ls"
 
--- bashls LSP config
+-- bashls LSP config:wq
 require "config-ls/bashls-config-ls"
+
+-- hls LSP config
+--require "config-ls/hls-config-ls"
 
 -- nvim-cmp config
 require "config/cmp-config"

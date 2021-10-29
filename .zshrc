@@ -87,6 +87,9 @@ alias dc="dotfiles commit -m "auto-commit""
 alias dotpush="dotfiles add -u && dotfiles commit -m "auto-commit" && dotfiles push origin master" 
 alias dotpull="dotfiles pull origin master"
 
+alias ...="../.."
+alias ....="../../.."
+
 # para garantir o teclado br
 exec $(setxkbmap br)
 

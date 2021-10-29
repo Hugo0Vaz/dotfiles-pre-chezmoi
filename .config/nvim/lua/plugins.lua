@@ -59,6 +59,9 @@ return require('packer').startup(function(use)
     -- fugitive.vim
     use {'tpope/vim-fugitive'}
 
+    -- comment plugin
+    use { 'tpope/vim-commentary' }
+
     -- automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then
         require('packer').sync()
