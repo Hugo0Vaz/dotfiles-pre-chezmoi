@@ -27,7 +27,7 @@ require "config-ls/pyright-config-ls"
 require "config-ls/bashls-config-ls"
 
 -- hls LSP config
---require "config-ls/hls-config-ls"
+require "config-ls/hls-config-ls"
 
 -- nvim-cmp config
 require "config/cmp-config"
