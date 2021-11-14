@@ -91,7 +91,7 @@ alias ...="../.."
 alias ....="../../.."
 
 # para garantir o teclado br
-exec $(setxkbmap br)
+# exec $(setxkbmap br)
 
 source ~/.scripts/goto.sh
 
