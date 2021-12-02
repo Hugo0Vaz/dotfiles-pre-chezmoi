@@ -35,6 +35,7 @@ vim.o.timeoutlen = 10
 vim.o.undofile = true
 vim.o.title = true
 vim.o.hidden = true
+vim.o.nu = true
 vim.o.rnu = true
 vim.o.wrap = false
 
