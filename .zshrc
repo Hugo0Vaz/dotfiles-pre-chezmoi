@@ -7,8 +7,6 @@ if command -v tmux \
   exec tmux
 fi
 
-export BW_SESSION="+770HDSMP8JgGH0Gwn+WsYJ39aLjFrqsqe8zKs93zYlkO3L1kV0VMtRjkFzirvlK1egY1f6EO51fXoCJvNyhlw=="
-
 export PATH=$HOME/bin:/usr/local/bin:$HOME/Projetos/obsidian_scripts:$HOME/.scripts:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
