@@ -90,6 +90,8 @@ alias dotpull="dotfiles pull origin master"
 alias ...="../.."
 alias ....="../../.."
 
+eval "$(pyenv virtualenv-init -)"
+
 # para garantir o teclado br
 # exec $(setxkbmap br)
 
