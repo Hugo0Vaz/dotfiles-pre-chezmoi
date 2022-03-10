@@ -16,11 +16,11 @@ autoload -Uz compinit && compinit
 ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_ORDER=(
-    venv
     user
     host
     dir
     git
+    venv
     exec_time
     line_sep
     exit_code
