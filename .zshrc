@@ -31,6 +31,9 @@ SPACESHIP_USER_SHOW=always
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_EXIT_CODE_SYMBOL='✘'
 
+# if not exported as true pyenv venv prompt shows twice
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
